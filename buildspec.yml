@@ -1,0 +1,10 @@
+version: 0.2
+phases:
+  build:
+    commands:
+  post_build:
+    commands:
+      # Sync with S3 bucket
+      - aws s3 sync . s3://issibeacreativeco.com/ --delete
+      # Invalidate CloudFront cache
+      - aws cloudfront create-invalidation --distribution-id E3F90IKDEGO0YV --paths "/*"
