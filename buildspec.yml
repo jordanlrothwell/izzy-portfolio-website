@@ -2,6 +2,8 @@ version: 0.2
 phases:
   build:
     commands:
+      # If you need build steps, add them here
+      - echo "Build phase started"
   post_build:
     commands:
       # Sync with S3 bucket
