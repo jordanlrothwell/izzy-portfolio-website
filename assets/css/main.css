@@ -7,11 +7,54 @@
     font-style: normal;
 }
 
-/*
-	Massively by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../webfonts/Sofia Pro Regular Az.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../webfonts/Sofia Pro Regular Italic Az.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../webfonts/Sofia Pro Bold Az.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../webfonts/Sofia Pro Bold Italic Az.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../webfonts/Sofia Pro Light Az.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../webfonts/Sofia Pro Medium Az.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Salenta';
+	src: url('../webfonts/salenta-salenta-400.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -154,7 +197,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "CustomFont", Georgia, serif; 
+		font-family: "Sofia Pro", Arial, sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 2.375;
@@ -182,6 +225,7 @@ input, select, textarea {
 	}
 
 	p {
+		font-family: "Sofia Pro", Arial, sans-serif;
 		text-align: justify;
 		margin: 0 0 2rem 0;
 	}
@@ -195,6 +239,16 @@ input, select, textarea {
 		margin: 0 0 1rem 0;
 	}
 
+	.post.featured header.major h2,
+	#main > .post header.major > h2,
+	#main article header.major h2 {
+		font-family: 'Salenta', serif !important;
+		font-size: 5rem !important;  /* MUCH bigger */
+		font-weight: normal !important;
+		letter-spacing: normal !important;
+		text-transform: none !important;
+		line-height: 1.1 !important;
+	}
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			border-bottom: 0;
 			color: inherit;
@@ -2413,7 +2467,7 @@ input, select, textarea {
 			display: inline-block;
 			font-size: 1rem;
 			letter-spacing: 0;
-			font-family: "CustomFont", Helvetica, sans-serif;
+			font-family: "Sofia Pro", Arial, sans-serif;
 			text-transform: none;
 			font-weight: 300;
 			padding-left: 2.8rem;
@@ -2431,7 +2485,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: "Sofia Pro", Arial, sans-serif;
 				font-weight: 900;
 			}
 
